@@ -1,0 +1,61 @@
+.footer{
+    /* background-color: hotpink; */
+    grid-column: 1/-1;
+    height: 200px;
+    margin-top: 2rem;
+    border-top: 3px solid goldenrod;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-section{
+    padding: 2rem 0;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+.copy h3{
+    text-align: center;
+}
+
+.copy-mark{
+    color: goldenrod;
+}
+
+
+
+.about-desc{
+    width: 200px;
+    text-align: justify;
+}
+ul{
+    text-align: center;
+}
+
+li:not(.not):hover{
+    cursor: pointer;
+    color: orange;
+}
+
+.footer-title{
+    color: goldenrod;
+    margin: 0 0 1rem;
+    cursor: inherit;
+}
+
+@media (max-width:500px){
+    .copy h3{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:400px){
+    ul{
+        margin-top: .5rem;
+    }
+}

@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url('/fonts/Vazir-Black.woff2') format('woff2'),
+    url('/fonts/Vazir-Medium.ttf') format('truetype');
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-rows: 80vh repeat(5, max-content);
+    grid-template-columns: repeat(6, 1fr);
+    font-family: sans-serif;
+}
+
+.section-title{
+    padding: 2rem .6rem;
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.section-title::before, .section-title::after{
+    content: '';
+    position: relative;
+    width: 2em;
+    height: 2px;
+    vertical-align: middle;
+    background-color: #000;
+    display: inline-block;
+}
+
+.section-title::after{
+    margin-right: .5rem;
+}
+
+.section-title::before{
+    margin-left: .5rem;
+}

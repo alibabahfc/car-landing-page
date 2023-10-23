@@ -1,0 +1,52 @@
+.header{
+    background-color: tomato;
+    grid-column: 1/-1;
+
+    
+    display: grid;
+    /* grid-template-columns: 300px; */
+    grid-template-rows: repeat(3, min-content);
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 20px;
+
+    background-image: linear-gradient(to right, #29282898, #000000f3), url(/images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+
+.header h3, .header h1{
+    color: #fff;
+}
+
+.header_mark{
+    color: orange;
+}
+
+/* .header_header1{
+
+}
+
+.header_header2{
+
+} */
+
+.header_btn{
+    padding: 10px 20px;
+    border: 1px solid orange;
+    background: orange;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+
+.header_btn:hover{
+    box-shadow: 0 0 6px 0 #333;
+    transform: scale(1.1);
+}
